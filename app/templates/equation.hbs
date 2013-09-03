@@ -1,0 +1,18 @@
+<div id="visualization">
+  {{#times num1}}
+    <div class="ball color1"></div>
+  {{/times}}
+  {{#times num2}}
+    <div class="ball color2"></div>
+  {{/times}}
+</div>
+
+<div id="equation">
+  <span class="num color1">{{num1}}</span>
+  {{operation}}
+  <span class="num color2">{{num2}}</span>
+  =
+  {{view Em.TextField id="answer" action="verifyAnswer" onEvent="keyPress"}}
+
+</div>
+

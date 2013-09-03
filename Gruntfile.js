@@ -16,14 +16,14 @@ module.exports = function(grunt) {
                      'clean:build',
                      'lock',
                      // Uncomment this line  & `npm install --save-dev grunt-contrib-coffee` for CoffeeScript support.
-                     // 'coffee',
+                     'coffee',
                      'copy:prepare',
                      'transpile',
                      'jshint',
                      'copy:stage',
                      'emberTemplates:compile',
-                     // Uncomment this line & `npm install --save-dev grunt-sass` for SASS support.
-                     // 'sass:compile',
+                     // Uncomment this line & `npm install --save-dev grunt-contrib-sass` for SASS support.
+                     'sass:compile',
                      // Uncomment this line & `npm install --save-dev grunt-contrib-less` for LESS support.
                      // 'less:compile'
                      // Uncomment this line & `npm install --save-dev grunt-contrib-stylus` for stylus/nib support.

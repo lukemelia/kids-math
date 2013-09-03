@@ -1,0 +1,37 @@
+$num1-color: purple
+$num2-color: blue
+
+$ball-radius: 20px
+
+#content
+  margin: 20px 40px
+
+#visualization
+  margin: 30px 0
+
+#equation
+  font-size: 22px
+  font-weight: bold
+
+.num
+  &.color1
+    color: $num1-color
+  &.color2
+    color: $num2-color
+
+
+.ball
+  display: inline-block
+  background: red
+  border-radius: $ball-radius
+  width: calc( 2 * #{$ball-radius})
+  height: calc( 2 * #{$ball-radius})
+  &.color1
+    background: $num1-color
+  &.color2
+    background: $num2-color
+
+#answer
+  width: 80px
+  font-size: 22px
+  font-weight: bold
