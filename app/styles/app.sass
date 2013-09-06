@@ -1,17 +1,43 @@
 $num1-color: purple
 $num2-color: blue
+$answer-color: red
 
-$ball-radius: 20px
+
+
+h2
+  font-size: 18px
+  color: blue
 
 #content
   margin: 20px 40px
 
-#visualization
-  margin: 30px 0
-
 #equation
+  margin-top: 40px
+  font-size: 32px
+  font-weight: bold
+
+#answer
+  width: 80px
   font-size: 22px
   font-weight: bold
+
+#answer-range
+  margin: 15px 0 60px 0
+
+button
+  width: 40px
+  font-size: 20px
+  font-weight: bold
+  color: white
+  background: red
+  border-radius: 8px
+  border: none
+  &:hover
+    background: darkred
+
+
+#visualization
+  margin: 30px 0 15px 0
 
 .num
   &.color1
@@ -19,7 +45,18 @@ $ball-radius: 20px
   &.color2
     color: $num2-color
 
+#answer-num
+  padding-bottom: 15px
+  vertical-align: center
+  margin-left: 10px
+  color: red
+  font-weight: bold
+  font-size: 40px
 
+#answer-visual
+  margin-bottom: 40px
+
+$ball-radius: 14px
 .ball
   display: inline-block
   background: red
@@ -30,8 +67,24 @@ $ball-radius: 20px
     background: $num1-color
   &.color2
     background: $num2-color
+  &.answer
+    background: $answer-color
 
-#answer
-  width: 80px
-  font-size: 22px
+#msg
+  color: red
   font-weight: bold
+  font-size: 46px
+  &.is-correct-state
+    color: green
+
+#go-again
+  width: 150px
+  background: green
+  &:hover
+    background: #006400
+
+#try-again
+  width: 150px
+  background: red
+  &:hover
+    background: darkred
