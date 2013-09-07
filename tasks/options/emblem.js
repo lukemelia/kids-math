@@ -8,7 +8,7 @@ module.exports = {
       dependencies: {
         jquery: 'vendor/jquery/jquery.js',
         ember: 'vendor/ember/index.js',
-        emblem: 'vendor/ember/emblem.js',
+        emblem: 'vendor/handlebars/emblem.js',
         handlebars: 'vendor/handlebars/handlebars.js'
       }
     }
