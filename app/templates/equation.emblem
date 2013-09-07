@@ -1,0 +1,31 @@
+#equation
+  span.num.color1=num1
+  | &nbsp;
+  operation
+  | &nbsp;
+  span.num.color2=num2
+  | &nbsp;= ?
+
+#answer-range
+  each num in answerRange
+    button{action 'verifyAnswer' num }=num
+
+#visualization
+  each num1Array
+    .ball.color1
+  each num2Array
+    .ball.color2
+
+if isAnsweredState
+  #answer-visual{bindAttr class="isAnsweredState"}
+    times answer
+      .ball.answer
+    #answer-num=answer
+
+  #buttons
+    #msg{bindAttr class="isCorrectState"}=message
+    | &nbsp;&nbsp;&nbsp;
+    if isCorrectState
+      button#go-again{action 'goAgain' answer } Go Again
+    else
+      button#try-again{action 'tryAgain' answer } Try Again

@@ -15,19 +15,14 @@ module.exports = function(grunt) {
   grunt.registerTask('build',   [
                      'clean:build',
                      'lock',
-                     // Uncomment this line  & `npm install --save-dev grunt-contrib-coffee` for CoffeeScript support.
                      'coffee',
                      'copy:prepare',
                      'transpile',
                      'jshint',
                      'copy:stage',
-                     'emberTemplates:compile',
-                     // Uncomment this line & `npm install --save-dev grunt-contrib-sass` for SASS support.
+                     //'emberTemplates:compile',
+                     'emblem:compile',
                      'sass:compile',
-                     // Uncomment this line & `npm install --save-dev grunt-contrib-less` for LESS support.
-                     // 'less:compile'
-                     // Uncomment this line & `npm install --save-dev grunt-contrib-stylus` for stylus/nib support.
-                     // 'stylus:compile'
                      'concat_sourcemap',
                      'unlock' ]);
 

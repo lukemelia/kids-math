@@ -1,0 +1,12 @@
+#content
+  h2=greeting
+  hr
+  outlet
+
+/#content
+/  h2
+/    each name in names
+/      ! Hello #{name}!&nbsp;
+/  hr
+/  outlet
+

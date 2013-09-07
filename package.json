@@ -42,7 +42,8 @@
     "grunt-concat-sourcemap": "~0.3.0",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-sass": "~0.3.0",
-    "grunt-dom-munger": "~2.0.1"
+    "grunt-dom-munger": "~2.0.1",
+    "grunt-emblem": "~0.1.0"
   },
   "dependencies": {
     "loom": "~2.0.0",
