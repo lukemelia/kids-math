@@ -1,7 +1,7 @@
 Kids Math
 ===
 
-An Ember app to help kid's learn math
+An Ember app to help kids learn math
 
 
 Implementation Status
